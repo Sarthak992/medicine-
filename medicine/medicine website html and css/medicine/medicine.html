@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>MediMatch - Buy Medicines</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <div class="top_contact-container">
+          <div class="tel_container">
+            <a href="">
+              <img src="images/telephone-symbol-button.png" alt=""> Call : +91 9992547684
+            </a>
+          </div>
+          <div class="clock-container">
+            <i class="fa fa-clock-o"></i>
+            <span id="current-time"></span>
+          </div>
+          <div class="social-container">
+            <a href="">
+              <img src="images/fb.png" alt="" class="s-1">
+            </a>
+            <a href="">
+              <img src="images/twitter.png" alt="" class="s-2">
+            </a>
+            <a href="">
+              <img src="images/instagram.png" alt="" class="s-3">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              MediMatch
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="medicine.html"> Medicine </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="buy.html"> Online Buy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"> News </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+              </ul>
+              <form class="form-inline ">
+                <input type="search" placeholder="Search">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+              <div class="login_btn-contanier ml-0 ml-lg-5">
+                <a href="">
+                  <img src="images/user.png" alt="">
+                  <span>
+                    Login
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Chatbot Button -->
+  <div class="chatbot-button" onclick="toggleChatbot()">
+    <i class="fa fa-comments"></i>
+    <span>Chat with us</span>
+  </div>
+
+  <!-- Chatbot Window -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <h4>Chat with our Pharmacist</h4>
+      <button onclick="toggleChatbot()"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot">
+        Hello! How can I help you today?
+      </div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="userMessage" placeholder="Type your message...">
+      <button onclick="sendMessage()"><i class="fa fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- health section -->
+
+  <section class="health_section layout_padding">
+    <div class="health_carousel-container">
+      <h2 class="text-uppercase">
+        Medicine & Health
+
+      </h2>
+      <div class="carousel-wrap layout_padding2">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    300
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-2   .jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    250
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-3.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    150
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-4.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    500
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-5.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    900
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-6.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    30
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-7.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    200
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-8.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Health
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    500
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="health_carousel-container">
+      <h2 class="text-uppercase">
+        Vitamins & Supplements
+
+
+      </h2>
+      <div class="carousel-wrap layout_padding2">
+        <div class="owl-carousel owl-2">
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-9.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Medicine
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      $
+                    </span>
+                    200
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-10.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Medicine
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    450
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-11.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Medicine
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    100
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Buy Now
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/p-12.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="star_container">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <div class="text">
+                  <h6>
+                    Medicine
+                  </h6>
+                  <h6 class="price">
+                    <span>
+                      rs
+                    </span>
+                    520
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="">
+        See more
+      </a>
+    </div>
+  </section>
+
+  <!-- end health section -->
+
+  <!-- Payment Section -->
+  <section class="payment_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>Payment Options</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-details">
+            <h3>Card Payment</h3>
+            <form class="payment-form">
+              <div class="form-group">
+                <label>Card Number</label>
+                <input type="text" class="form-control" placeholder="1234 5678 9012 3456">
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Expiry Date</label>
+                    <input type="text" class="form-control" placeholder="MM/YY">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>CVV</label>
+                    <input type="text" class="form-control" placeholder="123">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Card Holder Name</label>
+                <input type="text" class="form-control" placeholder="Enter card holder name">
+              </div>
+              <button type="submit" class="btn btn-primary">Pay Now</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="upi-payment">
+            <h3>UPI Payment</h3>
+            <div class="upi-options">
+              <div class="upi-option">
+                <img src="images/phonepe.png" alt="PhonePe">
+                <h4>PhonePe</h4>
+                <p>Pay using PhonePe UPI</p>
+                <button class="btn btn-primary">Pay with PhonePe</button>
+              </div>
+              <div class="upi-option">
+                <img src="images/gpay.png" alt="Google Pay">
+                <h4>Google Pay</h4>
+                <p>Pay using Google Pay</p>
+                <button class="btn btn-primary">Pay with Google Pay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Contact
+            </h4>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/telephone-symbol-button.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  +91 9416108970
+                </h6>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/email.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  rsingla@gmail
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_menu">
+            <h4>
+              Menu
+            </h4>
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="medicine.html"> Medicine </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buy.html"> Online Buy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info_news">
+            <h4>
+              newsletter
+            </h4>
+            <form action="">
+              <input type="text" placeholder="Enter Your email">
+              <div class="d-flex justify-content-center justify-content-md-end mt-3">
+                <button>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(".owl-2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/disease.js"></script>
+
+  <!-- Add before closing body tag -->
+  <style>
+  .payment_section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  .card-details, .upi-payment {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+
+  .payment-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .payment-form .form-control {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .upi-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .upi-option {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .upi-option:hover {
+    border-color: #007bff;
+    transform: translateY(-5px);
+  }
+
+  .upi-option img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .upi-option h4 {
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .upi-option p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .upi-options {
+      grid-template-columns: 1fr;
+    }
+  }
+  </style>
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Your Cart</h3>
+                    <div id="cartItems">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="total-amount mt-3">
+                        Total Amount: ₹<span id="totalAmount">0</span>
+                    </div>
+                    <a href="payment.html" class="btn btn-primary mt-3">Proceed to Payment</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Order Summary</h3>
+                    <p>Please review your order before proceeding to payment.</p>
+                    <p>You can pay using:</p>
+                    <ul>
+                        <li>Credit/Debit Card</li>
+                        <li>PhonePe</li>
+                        <li>Google Pay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
